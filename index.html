@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="shortcut icon" href="images/watchIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="colors">
+    <div class="container">
+
+        <!-- topter -->
+
+        <div class="heading" id="heading">
+            <h1>STOPWATCH</h1>
+        </div>
+      
+        <!-- Themes -->
+        <div class="themes" id="themes">
+            Dark
+            <input type="radio" name="theme" id="Dark" onclick="dark()">
+            Light
+            <input type="radio" name="theme" id="Light" onclick="light()">
+        </div>
+        <!-- StopWatch -->
+     
+        <div class="watchArea" id="watchArea">
+            <h1>
+                <span id="min">00</span> :
+                <span id="sec">00</span> :
+                <span id="msec">00</span>
+              </h1>
+        </div>
+        <div class="buttonArea">
+            <button id="start" onclick="startStop()">Start</button>
+            <button onclick="reset()">Reset</button>
+            <button id="lap" onclick="Lap()">laps</button>
+        </div>
+        <div class="laps">
+
+            <ul id="laps"></ul>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
